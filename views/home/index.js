@@ -2,4 +2,5 @@
 
 import { load } from "/admin/util/LoadView.js"
 
-load()  // 加载topbar  //sldemenu
+load("sidemenu-newsList")  // 加载topbar  //sldemenu
+

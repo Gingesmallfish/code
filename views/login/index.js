@@ -12,7 +12,6 @@ loginform.onsubmit = async  (evt) => {
     // json-server get  获取 post添加 ,put修改 delete删除
 
    let res = await fetch(`http://localhost:3000/users?username=${username.value}&password=${password.value}`).then(res => res.json());
-
     console.log(res[0])
     if (res.length > 0) {
         localStorage.setItem("token",JSON.stringify({
@@ -20,7 +19,6 @@ loginform.onsubmit = async  (evt) => {
             password: "*****",
         }))
         location.href = "/admin/views/home/index.html"
-       
     } else {
         // 失败
         console.log("失败")

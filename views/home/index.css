@@ -15,5 +15,5 @@ html, body, .main {
 }
 .main .box {
   flex: 1;
-  background-color: blue;
+  padding-top: 50px;
 }/*# sourceMappingURL=index.css.map */
